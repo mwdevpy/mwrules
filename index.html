@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пользовательское соглашение MW LLC</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        @page {
+            margin: 1.5cm;
+            size: A4;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-size: 12pt;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 30px;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        @media (max-width: 767px) {
+            body {
+                font-size: 15px;
+                line-height: 1.7;
+                max-width: 100%;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                padding: 15px;
+                border-radius: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 12px;
+                border-radius: 10px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+            position: relative;
+            overflow: hidden;
+            animation: slideIn 0.6s ease-out;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 767px) {
+            .header {
+                margin-bottom: 20px;
+                padding: 20px 15px;
+                border-radius: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                margin-bottom: 15px;
+                padding: 15px 10px;
+                border-radius: 10px;
+            }
+        }
+
+        .header h1 {
+            font-size: 28pt;
+            font-weight: 800;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 767px) {
+            .header h1 {
+                font-size: 20px;
+                margin-bottom: 8px;
+                letter-spacing: 0.5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 18px;
+                margin-bottom: 6px;
+                letter-spacing: 0.3px;
+            }
+        }
+
+        .header .subtitle {
+            font-size: 14pt;
+            margin-top: 10px;
+            opacity: 0.95;
+            font-weight: 300;
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 767px) {
+            .header .subtitle {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header .subtitle {
+                font-size: 12px;
+            }
+        }
+
+        .intro {
+            text-align: justify;
+            margin-bottom: 30px;
+            font-size: 11pt;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9ff 0%, #e8ecff 100%);
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: slideIn 0.6s ease-out 0.2s both;
+        }
+
+        .intro:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.15);
+        }
+
+        @media (max-width: 767px) {
+            .intro {
+                margin-bottom: 15px;
+                font-size: 14px;
+                padding: 15px;
+                border-radius: 10px;
+                border-left: 3px solid #667eea;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .intro {
+                margin-bottom: 12px;
+                font-size: 13px;
+                padding: 12px;
+                border-radius: 8px;
+            }
+        }
+
+        h2 {
+            font-size: 16pt;
+            font-weight: 700;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            padding: 18px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+            page-break-after: avoid;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h2::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        h2:hover::before {
+            left: 100%;
+        }
+
+        h2:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 767px) {
+            h2 {
+                font-size: 17px;
+                margin-top: 20px;
+                margin-bottom: 12px;
+                padding: 12px 15px;
+                border-radius: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 16px;
+                margin-top: 18px;
+                margin-bottom: 10px;
+                padding: 10px 12px;
+                border-radius: 8px;
+            }
+        }
+
+        h3 {
+            font-size: 13pt;
+            font-weight: 700;
+            margin-top: 18px;
+            margin-bottom: 12px;
+            color: #2c3e50;
+            page-break-after: avoid;
+            padding-left: 15px;
+            border-left: 3px solid #667eea;
+            transition: color 0.3s ease;
+        }
+
+        h3:hover {
+            color: #667eea;
+        }
+
+        @media (max-width: 767px) {
+            h3 {
+                font-size: 15px;
+                margin-top: 12px;
+                padding-left: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h3 {
+                font-size: 14px;
+                margin-top: 10px;
+                padding-left: 8px;
+                border-left: 2px solid #667eea;
+            }
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 12px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.8;
+            color: #2c3e50;
+        }
+
+        @media (max-width: 767px) {
+            p {
+                line-height: 1.7;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            p {
+                line-height: 1.6;
+                margin-bottom: 8px;
+            }
+        }
+
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+            animation: slideIn 0.6s ease-out;
+        }
+
+        .subsection {
+            margin-left: 15px;
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 767px) {
+            .subsection {
+                margin-left: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .subsection {
+                margin-left: 5px;
+            }
+        }
+
+        ul {
+            margin-left: 35px;
+            margin-bottom: 10px;
+            list-style-type: none;
+        }
+
+        @media (max-width: 767px) {
+            ul {
+                margin-left: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            ul {
+                margin-left: 18px;
+            }
+        }
+
+        ul li::before {
+            content: "●";
+            color: #667eea;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5em;
+            margin-left: -1.5em;
+            font-size: 12pt;
+            transition: transform 0.3s ease;
+        }
+
+        li:hover::before {
+            transform: scale(1.3);
+        }
+
+        li {
+            text-align: justify;
+            margin-bottom: 10px;
+            padding-left: 8px;
+            line-height: 1.8;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            transition: transform 0.2s ease;
+        }
+
+        li:hover {
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 767px) {
+            li {
+                line-height: 1.7;
+                margin-bottom: 8px;
+                padding-left: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            li {
+                line-height: 1.6;
+                margin-bottom: 6px;
+                padding-left: 3px;
+            }
+
+            li:hover {
+                transform: translateX(3px);
+            }
+        }
+
+        li strong {
+            color: #667eea;
+            font-weight: 700;
+        }
+
+        .definition {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-left: 4px solid #667eea;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .definition:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.15);
+        }
+
+        @media (max-width: 767px) {
+            .definition {
+                margin-left: 10px;
+                padding: 12px;
+                border-radius: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .definition {
+                margin-left: 5px;
+                padding: 10px;
+                border-radius: 6px;
+                border-left: 3px solid #667eea;
+            }
+        }
+
+        .definition strong {
+            font-weight: 700;
+            color: #667eea;
+            font-size: 11pt;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+            padding: 25px 30px;
+            border-left: 5px solid #00acc1;
+            margin: 25px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 172, 193, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlight::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, #00acc1, #00bcd4);
+            box-shadow: 0 0 10px rgba(0, 172, 193, 0.5);
+        }
+
+        .highlight:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 172, 193, 0.3);
+        }
+
+        @media (max-width: 767px) {
+            .highlight {
+                padding: 15px;
+                border-left: 4px solid #00acc1;
+                margin: 15px 0;
+                border-radius: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .highlight {
+                padding: 12px;
+                border-left: 3px solid #00acc1;
+                margin: 12px 0;
+                border-radius: 8px;
+            }
+        }
+
+        .highlight-important {
+            background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+            padding: 25px 30px;
+            border-left: 5px solid #ff9800;
+            margin: 25px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(255, 152, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlight-important::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, #ff9800, #ffa726);
+            box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+        }
+
+        .highlight-important:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 152, 0, 0.3);
+        }
+
+        @media (max-width: 767px) {
+            .highlight-important {
+                padding: 15px;
+                border-left: 4px solid #ff9800;
+                margin: 15px 0;
+                border-radius: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .highlight-important {
+                padding: 12px;
+                border-left: 3px solid #ff9800;
+                margin: 12px 0;
+                border-radius: 8px;
+            }
+        }
+
+        .highlight-critical {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            padding: 25px 30px;
+            border-left: 5px solid #f44336;
+            margin: 25px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(244, 67, 54, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlight-critical::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, #f44336, #e57373);
+            box-shadow: 0 0 10px rgba(244, 67, 54, 0.5);
+        }
+
+        .highlight-critical:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(244, 67, 54, 0.3);
+        }
+
+        @media (max-width: 767px) {
+            .highlight-critical {
+                padding: 15px;
+                border-left: 4px solid #f44336;
+                margin: 15px 0;
+                border-radius: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .highlight-critical {
+                padding: 12px;
+                border-left: 3px solid #f44336;
+                margin: 12px 0;
+                border-radius: 8px;
+            }
+        }
+
+        .contact-box {
+            border: none;
+            padding: 35px;
+            margin-top: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.4);
+            position: relative;
+            overflow: hidden;
+            animation: slideIn 0.6s ease-out 0.4s both;
+        }
+
+        .contact-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: rotate 15s linear infinite;
+        }
+
+        @media (max-width: 767px) {
+            .contact-box {
+                padding: 20px 15px;
+                margin-top: 25px;
+                border-radius: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-box {
+                padding: 15px 12px;
+                margin-top: 20px;
+                border-radius: 10px;
+            }
+        }
+
+        .contact-box h2 {
+            margin-top: 0;
+            background: none;
+            box-shadow: none;
+            padding: 0 0 15px 0;
+            border-bottom: 3px solid rgba(255,255,255,0.3);
+            font-size: 18pt;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-box h2:hover {
+            transform: none;
+        }
+
+        .contact-box p,
+        .contact-box ul,
+        .contact-box li,
+        .contact-box em {
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-box ul {
+            margin-top: 20px;
+        }
+
+        .contact-box li {
+            padding: 8px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-box li:hover {
+            transform: translateX(10px);
+        }
+
+        .contact-box ul li::before {
+            color: white;
+            content: "→";
+            font-size: 14pt;
+        }
+
+        .contact-box strong {
+            font-size: 12pt;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 767px) {
+            .contact-box h2 {
+                font-size: 16pt;
+                padding-bottom: 12px;
+            }
+
+            .contact-box strong {
+                font-size: 11pt;
+            }
+
+            .contact-box ul li::before {
+                font-size: 12pt;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-box h2 {
+                font-size: 15pt;
+                padding-bottom: 10px;
+            }
+
+            .contact-box strong {
+                font-size: 10pt;
+            }
+
+            .contact-box li {
+                font-size: 13px;
+            }
+
+            .contact-box ul li::before {
+                font-size: 11pt;
+            }
+        }
+
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid rgba(255,255,255,0.5);
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-box a:hover {
+            border-bottom-color: white;
+        }
+
+        @media print {
+            @page {
+                margin: 15mm;
+            }
+
+            body {
+                padding: 0;
+                max-width: 100%;
+                background: white;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            h2, h3 {
+                page-break-after: avoid;
+            }
+
+            .section {
+                page-break-inside: avoid;
+                box-shadow: none;
+            }
+
+            .highlight, .highlight-important, .highlight-critical {
+                page-break-inside: avoid;
+                box-shadow: none;
+            }
+
+            p {
+                orphans: 3;
+                widows: 3;
+            }
+
+            .header, .contact-box {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <h1>Пользовательское соглашение (Оферта)</h1>
+        <div class="subtitle">MW LLC — Редакция с 31.10.2025</div>
+    </div>
+
+    <div class="intro">
+        <p>Настоящее Пользовательское соглашение (далее — «Соглашение») является публичной офертой и регулирует отношения между администрацией сервиса «MW LLC» (далее — «Администрация», «Мы») и любым дееспособным лицом, принявшим условия Соглашения (далее — «Пользователь», «Вы»). Принятие Соглашения осуществляется путём регистрации, оплаты и/или фактического начала использования Сервиса.</p>
+    </div>
+
+    <div class="section">
+        <h2>1. Определения</h2>
+        <div class="definition"><strong>«Сервис»</strong> — программно-аппаратный комплекс MW LLC для организации защищённого сетевого соединения.</div>
+        <div class="definition"><strong>«Учётная запись»</strong> — совокупность данных Пользователя и настроек доступа.</div>
+        <div class="definition"><strong>«Трафик»</strong> — любые данные, передаваемые через Сервис.</div>
+        <div class="definition"><strong>«Тариф»</strong> — платный план обслуживания, включая срок, цену, объём и ограничения.</div>
+    </div>
+
+    <div class="section">
+        <h2>2. Присоединение к Соглашению</h2>
+        <div class="subsection">
+            <p><strong>2.1.</strong> Использование Сервиса означает полное и безоговорочное принятие условий Соглашения и Политики конфиденциальности.</p>
+            <p><strong>2.2.</strong> Если Вы не согласны с любым положением, Вы обязаны прекратить использование Сервиса.</p>
+            <p><strong>2.3.</strong> Мы вправе изменять Соглашение, Тарифы и функциональность Сервиса в одностороннем порядке; обновлённая редакция вступает в силу с момента публикации на сайте/в приложении, если иные сроки не указаны.</p>
+            <p><strong>2.4.</strong> Продолжение использования после публикации изменений означает согласие с новой редакцией.</p>
+            <p><strong>2.5.</strong> Мы вправе изменять это Соглашение, Политику конфиденциальности и иные политики/правила в любой момент без предварительного уведомления; факт публикации на сайте/в приложении считается надлежащим уведомлением.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>3. Услуги и ограничения</h2>
+        <div class="subsection">
+            <p><strong>3.1.</strong> Сервис предоставляется «как есть» и «как доступно» без обязательств по достижению конкретного результата.</p>
+            <p><strong>3.2.</strong> Не гарантируется доступ к конкретным сторонним ресурсам, скорость, совместимость и непрерывность работы.</p>
+            <p><strong>3.3.</strong> Мы вправе изменять технические параметры (скорость, объём трафика, число одновременных подключений, географию узлов) и применять меры против злоупотреблений (rate limit, антифрод, фильтрация трафика).</p>
+        </div>
+
+        <div class="highlight-important">
+            <h3>3.4. Использование серверов партнёров и поставщиков</h3>
+            <div class="subsection">
+                <p><strong>3.4.1.</strong> Не все серверы, доступные в рамках Сервиса, являются собственными. Часть серверной инфраструктуры может принадлежать нашим партнёрам, реселлерам или сторонним поставщикам услуг.</p>
+                <p><strong>3.4.2.</strong> Серверы партнёров и поставщиков могут иметь собственные условия использования, политики конфиденциальности и технические ограничения, которые могут отличаться от наших. Мы не несём ответственности за действия, политики, качество обслуживания и доступность серверов партнёров и поставщиков.</p>
+                <p><strong>3.4.3.</strong> Политика no-logs, описанная в разделе 6 настоящего Соглашения, применяется исключительно к нашей собственной инфраструктуре. Мы не можем гарантировать соблюдение политики no-logs на серверах партнёров и поставщиков. Каждый партнёр/поставщик самостоятельно определяет свою политику логирования в соответствии с применимым к ним законодательством.</p>
+                <p><strong>3.4.4.</strong> Серверы партнёров и поставщиков могут быть временно или постоянно недоступны по причинам, не зависящим от Администрации, включая технические сбои, блокировки, изъятие оборудования государственными органами, прекращение деятельности партнёра/поставщика, изменение условий сотрудничества или любые иные обстоятельства.</p>
+                <p><strong>3.4.5.</strong> Мы не гарантируем непрерывную доступность серверов партнёров и поставщиков и не несём ответственности за любые последствия их недоступности, включая невозможность использования Сервиса, потерю данных или любые иные убытки.</p>
+                <p><strong>3.4.6.</strong> Недоступность серверов партнёров и поставщиков не является основанием для возврата денежных средств, компенсации или предоставления бонусных дней, если только полная недоступность всех серверов Сервиса не была вызвана исключительно нашими действиями или бездействием.</p>
+                <p><strong>3.4.7.</strong> Используя Сервис, Вы принимаете риски, связанные с использованием серверов третьих лиц, и соглашаетесь с тем, что Администрация не несёт ответственности за любые последствия, возникшие в результате использования инфраструктуры партнёров и поставщиков.</p>
+            </div>
+        </div>
+
+        <div class="highlight-important">
+            <h3>3.5. Обязанности Администрации при реселлинге</h3>
+            <div class="subsection">
+                <p><strong>3.5.1.</strong> При использовании серверов партнёров и поставщиков (реселлинг) наши обязанности ограничиваются следующим:</p>
+                <ul>
+                    <li><strong>(a)</strong> Предоставление доступа к Сервису в соответствии с выбранным Тарифом;</li>
+                    <li><strong>(b)</strong> Обработка вопросов, связанных с управлением учётной записью, оплатой, продлением подписки и иными административными вопросами;</li>
+                    <li><strong>(c)</strong> Консультирование по общим вопросам использования Сервиса (настройка приложений, выбор протоколов, общие рекомендации);</li>
+                    <li><strong>(d)</strong> Передача информации о проблемах партнёрам/поставщикам и содействие в их решении в пределах наших возможностей.</li>
+                </ul>
+                <p><strong>3.5.2.</strong> Мы НЕ несём ответственности и НЕ обязаны:</p>
+                <ul>
+                    <li><strong>(a)</strong> Решать технические проблемы серверов партнёров и поставщиков (низкая скорость, нестабильное соединение, недоступность серверов, проблемы с маршрутизацией);</li>
+                    <li><strong>(b)</strong> Устранять проблемы, вызванные действиями или бездействием партнёров/поставщиков;</li>
+                    <li><strong>(c)</strong> Гарантировать конкретные сроки решения технических проблем на серверах партнёров;</li>
+                    <li><strong>(d)</strong> Компенсировать убытки, возникшие вследствие технических проблем на серверах партнёров и поставщиков;</li>
+                    <li><strong>(e)</strong> Предоставлять техническую поддержку по вопросам, находящимся в компетенции партнёров/поставщиков.</li>
+                </ul>
+                <p><strong>3.5.3.</strong> Администрация выступает исключительно в роли посредника между Вами и партнёрами/поставщиками. Все технические вопросы, связанные с работой серверов партнёров, находятся в зоне ответственности соответствующих партнёров/поставщиков.</p>
+                <p><strong>3.5.4.</strong> Мы приложим разумные усилия для передачи Ваших обращений партнёрам/поставщикам, однако не гарантируем их своевременное рассмотрение или решение проблемы.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>4. Аккаунт, оплата и продление</h2>
+        <div class="subsection">
+            <p><strong>4.1.</strong> Доступ предоставляется при наличии действующей подписки по выбранному Тарифу. Автопродление, если включено, уполномочивает регулярные списания стоимости следующего периода.</p>
+            <p><strong>4.2.</strong> Все платежи невозвратны, кроме случаев, прямо предусмотренных разделом 12 и/или императивными нормами права.</p>
+        </div>
+
+        <div class="highlight-important">
+            <h3>4.3. Обработка заказов и запросов</h3>
+            <div class="subsection">
+                <p><strong>4.3.1.</strong> Прием платежей осуществляется автоматизированно через платёжные системы. Однако обработка заказов, включая зачисление платежа в систему биллинга, активацию подписки, продление доступа и другие операции, выполняется в ручном режиме администраторами Сервиса.</p>
+                <p><strong>4.3.2.</strong> После успешной оплаты платёж необходимо вручную перенести в систему биллинга и обработать. На обработку заказа, зачисление платежа, активацию услуги или запроса может потребоваться до 48 (сорока восьми) часов с момента получения подтверждения оплаты. В отдельных случаях (технические сложности, большое количество обращений, выходные и праздничные дни, форс-мажорные обстоятельства) срок обработки может быть увеличен.</p>
+                <p><strong>4.3.3.</strong> Мы не гарантируем мгновенную обработку заказов после оплаты. Несмотря на то, что платёж был принят платёжной системой, активация услуги произойдёт только после ручной обработки администратором. Задержки в обработке не являются основанием для возврата денежных средств, компенсации или предоставления бонусных дней.</p>
+                <p><strong>4.3.4.</strong> Обращения в службу поддержки также обрабатываются в ручном режиме. Вы обязаны дождаться ответа в течение указанного срока. Повторные обращения по одному и тому же вопросу могут увеличить время обработки.</p>
+                <p><strong>4.3.5.</strong> Используя Сервис, Вы соглашаетесь с тем, что, несмотря на автоматизированный приём платежей, их обработка и зачисление в биллинг осуществляются в ручном режиме, и принимаете связанные с этим временные задержки.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>5. Приемлемое использование (AUP)</h2>
+        <div class="subsection">
+            <p><strong>5.1.</strong> Сервис предоставляет услуги защищённого сетевого соединения, но не является хостингом/серверной арендой или публичным прокси. Запрещено:</p>
+            <ul>
+                <li><strong>(a)</strong> вредоносная/незаконная сетевая активность (спам, DDoS/DoS, подбор паролей, эксплуатация уязвимостей, несанкционированный доступ);</li>
+                <li><strong>(b)</strong> создание чрезмерной нагрузки (масштабный скрейпинг/парсинг, автоматизированный трафик), нарушающей правила сторонних сервисов;</li>
+                <li><strong>(c)</strong> нарушение прав ИС, распространение незаконного контента, обход технических средств защиты;</li>
+                <li><strong>(d)</strong> мошенничество и маскировка личности для противоправных целей;</li>
+                <li><strong>(e)</strong> предоставление доступа третьим лицам/реселлинг, использование учётной записи как публичного прокси/выходного узла;</li>
+                <li><strong>(f)</strong> обход блокировок в нарушение применимого права;</li>
+                <li><strong>(g)</strong> P2P/торрент-трафик, если это не разрешено на отдельных серверах/Тарифах;</li>
+                <li><strong>(h)</strong> любые действия, нарушающие стабильность, безопасность или нормальную работу Сервиса.</li>
+            </ul>
+            <p><strong>5.2.</strong> При признаках нарушения мы вправе ограничить функции, заблокировать узлы/протоколы, приостановить или прекратить доступ.</p>
+            <p><strong>5.3.</strong> Любой вид абуза (включая перечисленные в п. 5.1 и иные злоупотребления) влечёт немедленный бан/расторжение доступа по нашему усмотрению без компенсации и с возможной блокировкой повторной регистрации.</p>
+            <p><strong>5.4.</strong> Отсутствие прямого запрета в предыдущих редакциях Соглашения либо наличие пробела в правилах не освобождает от ответственности: поведение, которое по своей сути противоречит целям и принципам настоящего AUP и/или наносит вред Сервису, рассматривается как злоупотребление. В максимально допустимой законом степени мы вправе применять меры по текущей редакции Соглашения к ранее допущенным действиям после их выявления.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>6. Конфиденциальность и «no-logs»</h2>
+        <div class="subsection">
+            <p><strong>6.1.</strong> Мы не ведём логи активности Пользователей: не записываем историю посещений и содержимое трафика.</p>
+            <p><strong>6.2.</strong> Мы можем обрабатывать ограниченный объём технической информации, необходимой для предоставления услуги, безопасности и расчётов (например, сведения о статусе учётной записи и факте подключения). Такая информация хранится ограниченное время и не используется для отслеживания Вашей активности в сети.</p>
+            <p><strong>6.3.</strong> Платежи обрабатываются внешними платёжными провайдерами; мы не храним полные реквизиты банковских карт.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>7. Персональные данные и обработка информации биллинга</h2>
+        <div class="subsection">
+            <p><strong>7.1.</strong> Мы обрабатываем персональные данные в объёме, необходимом для исполнения Соглашения и поддержки. Подробности — в Политике конфиденциальности.</p>
+        </div>
+
+        <div class="highlight-critical">
+            <h3>7.2. Обработка данных в веб-версии биллинга и Telegram-боте</h3>
+            <div class="subsection">
+                <p><strong>7.2.1.</strong> При использовании веб-версии биллинга и/или Telegram-бота мы обрабатываем все данные, которые доступны нам в рамках этих платформ, включая:</p>
+                <ul>
+                    <li>Данные, предоставленные Telegram API (идентификатор пользователя, имя пользователя, язык интерфейса и иную техническую информацию);</li>
+                    <li>Данные, которые Вы добровольно вводите в панели биллинга или в боте (включая, но не ограничиваясь: контактную информацию, данные для связи, настройки аккаунта);</li>
+                    <li>Данные о взаимодействии с интерфейсами (история запросов, действия в панели управления, переписка с ботом поддержки);</li>
+                    <li>Метаданные и технические данные (IP-адреса при входе в биллинг, информация об устройстве и браузере, временные метки).</li>
+                </ul>
+                <p><strong>7.2.2.</strong> Вся информация, полученная нами через веб-версию биллинга и Telegram-бот, обрабатывается в целях предоставления услуги, технической поддержки, обеспечения безопасности, предотвращения злоупотреблений и выполнения обязательств по настоящему Соглашению.</p>
+                <p><strong>7.2.3.</strong> Используя веб-версию биллинга и/или Telegram-бот, Вы явно соглашаетесь на обработку всех указанных данных в соответствии с настоящим разделом.</p>
+            </div>
+        </div>
+
+        <div class="highlight-important">
+            <h3>7.3. Использование стороннего программного обеспечения биллинга</h3>
+            <div class="subsection">
+                <p><strong>7.3.1.</strong> Система биллинга, используемая для обработки заказов, платежей и управления учётными записями, является сторонним программным обеспечением и не принадлежит Администрации.</p>
+                <p><strong>7.3.2.</strong> Сторонняя система биллинга может иметь собственные условия использования, политику конфиденциальности и стандарты обработки данных. Мы не несём ответственности за функционирование, безопасность, доступность и политики обработки данных стороннего программного обеспечения биллинга.</p>
+                <p><strong>7.3.3.</strong> Используя Сервис, Вы соглашаетесь с тем, что Ваши данные обрабатываются с использованием стороннего программного обеспечения, и принимаете связанные с этим риски.</p>
+            </div>
+        </div>
+
+        <div class="highlight-important">
+            <h3>7.4. Размещение веб-ресурсов и хостинг-провайдеры</h3>
+            <div class="subsection">
+                <p><strong>7.4.1.</strong> Веб-сайт Сервиса, панель биллинга и иные веб-ресурсы размещены на серверах хостинг-провайдеров, которые не зарегистрированы и не находятся на территории Российской Федерации.</p>
+                <p><strong>7.4.2.</strong> Хостинг-провайдеры могут находиться в различных юрисдикциях и подчиняться законодательству соответствующих государств. Администрация не контролирует и не несёт ответственности за действия хостинг-провайдеров, их политики обработки данных и соблюдение ими требований законодательства.</p>
+                <p><strong>7.4.3.</strong> В случае запросов от государственных органов Российской Федерации хостинг-провайдеры могут быть не обязаны их исполнять в силу нахождения вне юрисдикции РФ.</p>
+                <p><strong>7.4.4.</strong> Мы не несём ответственности за доступность, безопасность и сохранность данных на серверах хостинг-провайдеров, а также за действия или бездействие хостинг-провайдеров, включая случаи блокировки, изъятия оборудования, утечки данных или предоставления информации третьим лицам.</p>
+                <p><strong>7.4.5.</strong> Используя Сервис, Вы соглашаетесь с тем, что Ваши данные хранятся и обрабатываются на серверах за пределами Российской Федерации, и принимаете все связанные с этим риски.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>8. Запросы государственных органов</h2>
+        <div class="subsection">
+            <p><strong>8.1.</strong> Рассматриваются только надлежащим образом оформленные запросы компетентных органов, поступившие по официальным каналам.</p>
+            <p><strong>8.2.</strong> Мы проверяем законность и объём запроса и действуем в соответствии с применимым правом (см. раздел 17).</p>
+            <p><strong>8.3.</strong> В рамках политики no-logs у нас отсутствуют логи активности и содержимое трафика; при отсутствии запрашиваемых данных мы информируем орган об этом.</p>
+        </div>
+
+        <div class="highlight-critical">
+            <h3>8.4. Передача данных биллинга и Telegram-бота государственным органам</h3>
+            <div class="subsection">
+                <p><strong>8.4.1.</strong> При получении законного запроса от компетентных государственных органов мы вправе передать данные, которые были введены Вами или получены нами в веб-версии биллинга и/или через Telegram-бот, включая:</p>
+                <ul>
+                    <li>Идентификационные данные Telegram-аккаунта;</li>
+                    <li>Контактную информацию, указанную в панели биллинга;</li>
+                    <li>Данные о платежах и транзакциях;</li>
+                    <li>Историю обращений в службу поддержки;</li>
+                    <li>Технические данные (IP-адреса входов в биллинг, метаданные сессий);</li>
+                    <li>Любую иную информацию, предоставленную Вами или доступную в системе биллинга.</li>
+                </ul>
+                <p><strong>8.4.2.</strong> Передача данных осуществляется в объёме, необходимом для выполнения законного запроса, и только при наличии надлежащих правовых оснований.</p>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <p><strong>8.5.</strong> По возможности и если это не запрещено законом, мы уведомляем затронутого Пользователя.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>9. Интеллектуальная собственность</h2>
+        <div class="subsection">
+            <p><strong>9.1.</strong> Исключительные права на ПО, базы данных, интерфейсы, дизайны и товарные знаки принадлежат Администрации.</p>
+            <p><strong>9.2.</strong> Запрещены обратная разработка, декомпиляция, копирование, модификация и распространение элементов Сервиса без нашего письменного согласия, если иное не разрешено законом.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>10. Доступность и поддержка</h2>
+        <div class="subsection">
+            <p><strong>10.1.</strong> Сервис предоставляется без гарантии бесперебойной работы или соответствия конкретным целям использования.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>11. Отказ от гарантий</h2>
+        <div class="subsection">
+            <p><strong>11.1.</strong> Сервис предоставляется «как есть» и «как доступно». Мы отказываемся от любых явных или подразумеваемых гарантий, включая товарную пригодность, пригодность для конкретной цели и ненарушение прав.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>12. Возвраты и жалобы</h2>
+        <div class="subsection">
+            <p><strong>12.1.</strong> Денежные возвраты не предусмотрены ни при каких обстоятельствах, за исключением случаев, прямо и безусловно требуемых императивными нормами применимого права, которые не могут быть исключены соглашением сторон.</p>
+            <p><strong>12.2.</strong> В случае длительной недоступности Сервиса по нашей вине мы предоставляем сервисное продление (бонусные дни) или внутренний сервисный баланс, который автоматически засчитывается при следующем продлении. Такой баланс не подлежит выводу деньгами и используется только на услуги Сервиса.</p>
+            <p><strong>12.3.</strong> Претензии, связанные с качеством работы, скоростью соединения, доступностью отдельных серверов или географических локаций не являются основанием для возврата денежных средств.</p>
+            <p><strong>12.4.</strong> Оплачивая услугу, Вы безоговорочно соглашаетесь с условием о невозвратности платежей и отказываетесь от каких-либо претензий по возврату денежных средств, за исключением случаев, указанных в п. 12.1.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>13. Ограничение ответственности</h2>
+        <div class="subsection">
+            <p><strong>13.1.</strong> В максимально допустимой законом степени мы не несём ответственности за косвенные, штрафные, особые, побочные и последующие убытки, упущенную выгоду, потерю данных/репутации, даже если были уведомлены о возможности таких убытков.</p>
+            <p><strong>13.2.</strong> Ограничения не применяются к вреду, причинённому умышленно или по грубой неосторожности.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>14. Возмещение убытков (индемнити)</h2>
+        <div class="subsection">
+            <p><strong>14.1.</strong> Вы обязуетесь возместить и обезопасить Администрацию, её аффилированных лиц, сотрудников и партнёров от любых претензий, убытков и расходов (включая разумные расходы на юристов), возникших вследствие Вашего нарушения Соглашения, закона или прав третьих лиц.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>15. Приостановка и прекращение</h2>
+        <div class="subsection">
+            <p><strong>15.1.</strong> Мы вправе без предварительного уведомления приостановить или прекратить доступ при нарушении Соглашения, AUP, закона, по соображениям безопасности или по требованию компетентных органов.</p>
+            <p><strong>15.2.</strong> Вы вправе прекратить использование Сервиса в любое время; уплаченные суммы не возвращаются, за исключением случаев, предусмотренных разделом 12.</p>
+            <p><strong>15.3.</strong> По прекращении доступа мы можем удалить или обезличить связанные с Вами данные в разумные сроки.</p>
+            <p><strong>15.4.</strong> Мы вправе в любой момент и по собственному усмотрению временно или окончательно ограничить, приостановить либо прекратить доступ к Сервису и/или отдельным его функциям без объяснения причин, в том числе для защиты Сервиса и пользователей, выполнения требований закона, проведения технических работ или по иным организационным причинам.</p>
+            <p><strong>15.5.</strong> Меры, предусмотренные настоящим разделом и AUP, могут применяться к ранее допущенным действиям Пользователя, выявленным после их совершения, в максимально допустимой законом степени, включая случаи отсутствия прямого запрета в предыдущих версиях Соглашения, если такие действия по своей сути являлись злоупотреблением и/или причиняли вред Сервису.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>16. Экспортный контроль и санкции</h2>
+        <div class="subsection">
+            <p><strong>16.1.</strong> Используя Сервис, Вы подтверждаете, что не являетесь лицом из санкционных списков и не находитесь в запрещённой юрисдикции, а также не используете Сервис в целях, запрещённых экспортным контролем.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>17. Применимое право и подсудность</h2>
+        <div class="subsection">
+            <p><strong>17.1.</strong> Настоящее Соглашение регулируется правом государства места проживания (или регистрации) владельца Сервиса/Администрации.</p>
+            <p><strong>17.2.</strong> Все споры, разногласия или требования, возникающие из Соглашения или в связи с ним, подлежат исключительной подсудности судов по месту проживания (или регистрации) владельца Сервиса/Администрации.</p>
+            <p><strong>17.3.</strong> Стороны разрешают споры только в индивидуальном порядке; коллективные иски не допускаются, если иное прямо не предусмотрено императивными нормами права.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>18. Изменения Соглашения и коммуникации</h2>
+        <div class="subsection">
+            <p><strong>18.1.</strong> Мы вправе изменять Соглашение, Политику конфиденциальности и иные внутренние документы в любой момент без предварительного уведомления; публикация новой редакции на сайте/в приложении является моментом вступления изменений в силу.</p>
+            <p><strong>18.2.</strong> Юридически значимые уведомления могут направляться электронной почтой, через приложение или публиковаться на сайте.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>19. Форс-мажор</h2>
+        <div class="subsection">
+            <p><strong>19.1.</strong> Мы освобождаемся от ответственности за задержки и неисполнение, вызванные обстоятельствами непреодолимой силы (включая сбои у провайдеров связи, хостинг-провайдеров, действия государственных органов, войны, забастовки, катастрофы и т.п.).</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>20. Прочие условия</h2>
+        <div class="subsection">
+            <p><strong>20.1.</strong> Недействительность отдельного положения не влияет на действительность остальных.</p>
+            <p><strong>20.2.</strong> Неприменение нами какого-либо права не считается отказом от него.</p>
+            <p><strong>20.3.</strong> Соглашение заменяет все предыдущие договорённости по предмету.</p>
+            <p><strong>20.4.</strong> Вы не вправе передавать права/обязанности по Соглашению без нашего письменного согласия; мы вправе уступить права аффилированным лицам.</p>
+        </div>
+    </div>
+
+    <div class="contact-box">
+        <h2>21. Контакты</h2>
+        <p><strong>Полезные ссылки:</strong></p>
+        <ul>
+            <li><a href="https://billing.mwshark.host/submitticket.php" target="_blank" rel="noopener noreferrer">Техническая поддержка</a></li>
+            <li><a href="https://pay.mwshark.host/" target="_blank" rel="noopener noreferrer">Страница оплаты</a></li>
+            <li><a href="https://billing.mwshark.host/" target="_blank" rel="noopener noreferrer">Биллинг-панель</a></li>
+            <li><a href="https://rules.mwshark.host" target="_blank" rel="noopener noreferrer">Пользовательское соглашение</a></li>
+        </ul>
+        <p><em>При обращении в поддержку указывайте ID аккаунта и подробности запроса.</em></p>
+    </div>
+    </div>
+</body>
+</html>
