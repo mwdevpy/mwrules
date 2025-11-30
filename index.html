@@ -9,18 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #030305;
-            --surface: #0f1014;
-            --surface-glass: rgba(15, 16, 20, 0.7);
-            --primary: #4f46e5;
-            --primary-glow: #4f46e580;
-            --alert: #ef4444;
-            --alert-glow: rgba(239, 68, 68, 0.3);
-            --warning: #f59e0b;
-            --success: #10b981;
-            --text: #ffffff;
-            --text-sec: #94a3b8;
-            --border: rgba(255, 255, 255, 0.08);
+            --bg: linear-gradient(135deg, #050914 0%, #0d1a2f 50%, #0a1324 100%);
+            --surface: rgba(10, 18, 32, 0.9);
+            --surface-glass: rgba(12, 22, 40, 0.7);
+            --primary: #7cc8ff;
+            --primary-glow: #7cc8ff80;
+            --alert: #f87171;
+            --alert-glow: rgba(248, 113, 113, 0.3);
+            --warning: #fbbf24;
+            --success: #34d399;
+            --text: #e6f2ff;
+            --text-sec: #b7c9de;
+            --border: rgba(255, 255, 255, 0.1);
             --ease: cubic-bezier(0.23, 1, 0.32, 1);
         }
 
@@ -33,12 +33,13 @@
         }
 
         body {
-            background-color: var(--bg);
+            background: var(--bg);
             color: var(--text);
             font-family: 'Manrope', sans-serif;
             line-height: 1.6;
             overflow-x: hidden;
             font-size: 15px;
+            user-select: none;
         }
 
         .bg-glow {
@@ -62,17 +63,17 @@
         .orb-1 {
             width: 50vw;
             height: 50vw;
-            background: radial-gradient(circle, var(--primary), transparent 70%);
-            top: -10%;
-            left: -10%;
+            background: radial-gradient(circle, rgba(124, 200, 255, 0.7), transparent 70%);
+            top: -15%;
+            left: -20%;
         }
 
         .orb-2 {
             width: 40vw;
             height: 40vw;
-            background: radial-gradient(circle, #7c3aed, transparent 70%);
-            bottom: -10%;
-            right: -10%;
+            background: radial-gradient(circle, rgba(126, 185, 255, 0.6), transparent 70%);
+            bottom: -15%;
+            right: -20%;
             animation-delay: -5s;
         }
 
@@ -125,6 +126,83 @@
         .subtitle {
             color: var(--text-sec);
             font-size: 0.9rem;
+            display: inline-block;
+        }
+
+        .snow {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image:
+                radial-gradient(2px 2px at 10% 20%, rgba(255, 255, 255, 0.8), transparent),
+                radial-gradient(2px 2px at 30% 40%, rgba(255, 255, 255, 0.8), transparent),
+                radial-gradient(2px 2px at 50% 10%, rgba(255, 255, 255, 0.9), transparent),
+                radial-gradient(2px 2px at 70% 30%, rgba(255, 255, 255, 0.8), transparent),
+                radial-gradient(2px 2px at 90% 60%, rgba(255, 255, 255, 0.8), transparent),
+                radial-gradient(2px 2px at 20% 80%, rgba(255, 255, 255, 0.75), transparent),
+                radial-gradient(2px 2px at 50% 90%, rgba(255, 255, 255, 0.65), transparent);
+            animation: snowfall 18s linear infinite;
+            opacity: 0.85;
+        }
+
+        .snow::before,
+        .snow::after {
+            content: '';
+            position: absolute;
+            inset: -40px;
+            pointer-events: none;
+            background-repeat: repeat;
+        }
+
+        .snow::before {
+            background-image:
+                radial-gradient(3px 3px at 15% 25%, rgba(255, 255, 255, 0.65), transparent),
+                radial-gradient(3px 3px at 40% 5%, rgba(255, 255, 255, 0.7), transparent),
+                radial-gradient(3px 3px at 65% 35%, rgba(255, 255, 255, 0.65), transparent),
+                radial-gradient(3px 3px at 85% 55%, rgba(255, 255, 255, 0.65), transparent),
+                radial-gradient(3px 3px at 55% 75%, rgba(255, 255, 255, 0.55), transparent);
+            animation: snowfall-fast 12s linear infinite;
+            opacity: 0.6;
+        }
+
+        .snow::after {
+            background-image:
+                radial-gradient(4px 4px at 25% 15%, rgba(255, 255, 255, 0.35), transparent),
+                radial-gradient(4px 4px at 60% 45%, rgba(255, 255, 255, 0.4), transparent),
+                radial-gradient(4px 4px at 80% 25%, rgba(255, 255, 255, 0.35), transparent),
+                radial-gradient(4px 4px at 45% 65%, rgba(255, 255, 255, 0.35), transparent),
+                radial-gradient(4px 4px at 70% 85%, rgba(255, 255, 255, 0.3), transparent);
+            animation: snowfall-slow 24s linear infinite;
+            opacity: 0.45;
+            filter: blur(1px);
+        }
+
+        .snow-edge {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(220px 180px at 0% 0%, rgba(255, 255, 255, 0.12), transparent 70%),
+                radial-gradient(220px 180px at 100% 0%, rgba(255, 255, 255, 0.12), transparent 70%),
+                radial-gradient(240px 200px at 0% 100%, rgba(255, 255, 255, 0.1), transparent 70%),
+                radial-gradient(240px 200px at 100% 100%, rgba(255, 255, 255, 0.1), transparent 70%),
+                linear-gradient(0deg, rgba(255, 255, 255, 0.06) 0%, transparent 25%),
+                linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, transparent 25%);
+        }
+
+        @keyframes snowfall {
+            0% { background-position: 0 0, 0 0, 0 0, 0 0, 0 0; }
+            100% { background-position: 0 600px, 0 800px, 0 500px, 0 700px, 0 900px; }
+        }
+
+        @keyframes snowfall-fast {
+            0% { transform: translateY(-20px); }
+            100% { transform: translateY(220px); }
+        }
+
+        @keyframes snowfall-slow {
+            0% { transform: translateY(-10px); }
+            100% { transform: translateY(260px); }
         }
 
         .legal-container {
@@ -242,6 +320,9 @@
                 padding: 20px;
                 background: rgba(15, 16, 20, 0.85);
             }
+            .snow {
+                opacity: 0.75;
+            }
         }
     </style>
 </head>
@@ -251,6 +332,8 @@
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
     </div>
+    <div class="snow"></div>
+    <div class="snow-edge"></div>
 
     <div class="wrapper">
         <header>
@@ -258,7 +341,7 @@
                 <span>MW VPN • NETWORK TERMS</span>
             </div>
             <h1>Условия<br>Использования</h1>
-            <p class="subtitle">Последнее обновление: 11 Февраля 2025</p>
+            <p class="subtitle">Последнее обновление: 30 Ноября 2025</p>
         </header>
 
         <main class="legal-container">
@@ -447,6 +530,30 @@
 
         document.querySelectorAll('.section').forEach(section => {
             observer.observe(section);
+        });
+
+        const blockEvent = (event) => event.preventDefault();
+
+        document.addEventListener('contextmenu', blockEvent);
+        document.addEventListener('selectstart', blockEvent);
+        document.addEventListener('dragstart', blockEvent);
+        document.addEventListener('copy', blockEvent);
+        document.addEventListener('cut', blockEvent);
+        document.addEventListener('paste', blockEvent);
+
+        document.addEventListener('keydown', (event) => {
+            const key = event.key.toLowerCase();
+            if (event.ctrlKey || event.metaKey) {
+                event.preventDefault();
+            }
+
+            if (event.altKey && event.shiftKey) {
+                event.preventDefault();
+            }
+
+            if (key === 'f12' || key === 'f5' || key === 'escape') {
+                event.preventDefault();
+            }
         });
     </script>
     <script src="//code.jivo.ru/widget/GSkhUQUJxp" async></script>
